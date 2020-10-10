@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04ecolha</title>
+    <script>
+
+        var blumenau = 0, joinvile = 0, indaial = 0;
+
+        // laço
+        do{
+            // pergunta
+            var cidade=parseInt(prompt("1)Blumenau\n2)joivile\n03)indaial"))
+            //contar voto 
+            switch(cidade){
+                case 1:
+                blumenau++
+                break
+
+                case 2:
+                joinvile++
+                break
+
+                default:
+                    indaial++
+            }
+        }while(confirm("Deseja coontinuar?"))
+        // Exibir voto
+        document.write("Blumenau" + blumenau+"<br>")
+        document.write("joinvile" + joinvile+"<br>")
+        document.write("indaial " + indaial +"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
