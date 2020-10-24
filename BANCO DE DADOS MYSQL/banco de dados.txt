@@ -1,0 +1,10 @@
+Banco de Dados; Armazenar dados por tempo ideterminado.
+SDGB((Sistema de gerenciador de banco de dados):
+>MySQL
+>SQl Server
+>Oracle
+>PostgreSQL
+
+SQL (strucuture query langage)
+>DDl(Data define language
+>DMl(Data manipulation language)

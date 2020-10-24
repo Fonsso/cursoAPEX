@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Funções</title>
+    <!--JS-->
+    <script>
+
+        function mensagem(){
+        alert("Aprendendo Fução")
+
+        }
+
+        function descricao(codigo){
+            switch (parseInt(codigo)){
+                case 1:
+                alert('Cidade da oktober fest')
+                break
+
+                case 2:
+                alert("Ocorre evento Stammtich")
+                break
+
+                case 3:
+                alert("Possui um parque ecologico Freymund Germer")
+                break
+
+                default:
+                alert("Escolnha uma cidade")
+            }
+
+        }
+        function teclado(texto){
+            document.getElementById("exibir").innerText = texto
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="mensagems()">Clique aque</button>
+
+        <select onchange="descricao(this.value)">
+            <option value="0">Escolha uma cidade</option>
+            <option value="1">Blumenau</option>
+            <option value="2">Indadial</option>
+            <option value="3">Timbo</option>
+        
+    </select>
+
+    <h1 id="exibir"> </h1>
+   
+    <input type="text" id="campo" placeholder="Digite algo..." onkeyup="teclado(this.value)">
+
+
+</body>
+</html>

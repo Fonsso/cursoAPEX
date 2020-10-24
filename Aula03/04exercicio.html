@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numeros = []
+        var numero
+       
+        do{
+            numero = prompt("Informe um numero")
+    
+        if(numero != 0){
+            //obter numero e passar para variavel
+            numeros.push(numero)
+        }
+        }while(numero != 0)
+
+        var  positivos  =  0
+        var  negativos  =  0
+        var  pares  =  0
+        var  impares  =  0
+
+        for(var indice = 0; indice < numeros.length; indice ++){
+            if(numeros[indice]> 0){
+                positivos++
+            }else{
+                negativos++
+            }
+            if(numero[indice] % 2 == 0){
+                pares++
+            }else{
+                impares++
+            }
+
+        }
+
+      document.write("Pares: "+pares+"<br>");
+      document.write("Ímpares: "+impares+"<br>");
+      document.write("Positivos: "+positivos+"<br>");
+      document.write("Negativos: "+negativos+"<hr>");
+
+      for(var indice = 0; indice < numeros.length; indice++){
+        document.write(numeros[indice]+"<br>")
+      }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

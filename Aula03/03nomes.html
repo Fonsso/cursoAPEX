@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-nomes</title>
+    <!--JS-->
+
+    <script>
+
+        //Vetor de nomes
+        var nomes = []
+        //função de  cadastro
+        function cadastrar(){
+        //obtem nom digitado
+            var campo_nome = document.getElementById("campo_nome")
+            if(campo_nome.value == ""){
+            alert("Por favor informar um nome")
+            }else if(campo_nome.value.length < 3){
+             alert( "Por favor informar pelo mnenos 3 caracteres")
+            }else{
+            // cadstar no vetor
+            nomes.push(campo_nome.value)
+            //limpar camp
+            campo_nome.value = ""
+            //adicionar valor no campo
+            campo_nome = focus()
+            //arualizar lista de campo
+            listar()
+            }
+        }
+            // listar 
+            function listar(){
+            var listar = document.getElementById("listar")
+            //limpar conteudo da lista 
+            listar.innerHTML = ""
+            //laço de repetição
+            for(var linha = 0; linha < nomes.length; linha++){
+                listar.innerHTML+= nomes[linha] 
+                listar.innerHTML+= "<button onClick='remover("+linha+")'>Remover</button>"
+                listar.innerHTML+= "<hr>"
+            }
+            }
+            function remover(linha){
+                //remover o nome no vetor
+                nomes.splice(linha,1)
+                // atualizar lista nomes 
+                listar()
+            }
+    </script>
+
+
+
+</head>
+<body>
+
+    <!--Formulario-->
+    <form >
+        <input type="text" id="campo_nome" placeholder="Infomre um nome">
+        <input type="button" onclick="cadastrar()" value="cadrastrar">
+    </form>
+    <!--Listagem de nomes-->
+    <div id="listar"></div>
+</body>
+</html>

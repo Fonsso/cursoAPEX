@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numeros = []
+        var numero
+        var indice = 0
+        do{
+            numero = prompt("imforme o"+(ndice+1)+"numero")
+
+            var valida = false
+        
+            for(var i = 0 ; i<5; i++){
+                if(numero == numeros [i]){
+                    valiida = true
+                }
+            }
+            if (valida == false ){
+                numeros[indice] = numero
+                indice ++
+            }else{
+                alert("o numero informado ja existe")
+            }while(indice < 5 )
+            
+            for(var indice = 0; indice< numeros.length; indice++){
+                document.write(numeros[indice]+"<br>")
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
