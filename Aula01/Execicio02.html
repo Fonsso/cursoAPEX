@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <script>
-    var numero = prompt("Informe um numero!")
+    var numero = prompt("Informe um numero!\n1) Pizza  - R$12,00\n1) Pizza  - R$12,00\n2) Pão de Queijo - R$4,00\n3) Macarrão  - R$16,00\n4) Pastel  - R$ 4.50")
     var pagamento = prompt("Valor pago")
    
     if(numero == 1){
         document.write("1) Pizza  - R$12,00")
-        document.write("<br>" + (pagamento - 12))
+        document.write("<br>"+ (pagamento - 12)+ "R$ Troco")
     }
     if(numero == 2){
         document.write("2) Pão de Queijo - R$4,00")
-        document.write("<br>"+ (pagamento - 4))
+        document.write("<br>"+ (pagamento - 4)+"R$ Troco")
     }
      if(numero == 3){
         document.write("3) Macarrão  - R$16,00")
-        document.write("<br>"+ (pagamento - 16))
+        document.write("<br>"+ (pagamento - 16)+"R$ Troco")
     }
     if(numero == 4){
         document.write("4) Pastel 	 - R$ 4.50")
-        document.write("<br>"+ (pagamento - 4,50))
+        document.write("<br>"+ (pagamento - 4,50)+"R$ Troco")
     }
 
 </script>

@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // vetor
         var numeros = []
+        // numero
         var numero
-        var indice = 0
+        // contador
+        var contador = 0
+        // laço
         do{
-            numero = prompt("imforme o"+(ndice+1)+"numero")
-
+            //obter um numero
+            numero = prompt("imforme o numero")
+            // valiadar se o numero exite no vetor
             var valida = false
-        
-            for(var i = 0 ; i<5; i++){
-                if(numero == numeros [i]){
-                    valiida = true
+            // laço
+            for(var i = 0 ; i < 5; i++){
+                if(numero == numeros[i]){
+                    valida = true
                 }
             }
+            // Adicionar o numero ou informar que ja exite
             if (valida == false ){
-                numeros[indice] = numero
-                indice ++
+                numeros[contador] = numero
+                contador ++
             }else{
                 alert("o numero informado ja existe")
-            }while(indice < 5 )
+            }
+
+            }while(contador < 5 )
             
-            for(var indice = 0; indice< numeros.length; indice++){
-                document.write(numeros[indice]+"<br>")
+            
+            for(var contador = 0; contador< numeros.length; contador++){
+                document.write(numeros[contador]+"<br>")
             }
     </script>
 </head>
